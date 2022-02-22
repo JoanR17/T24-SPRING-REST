@@ -58,7 +58,7 @@ public class EmpleadoController {
 		return empleado_xid;
 	}
 	
-	@PutMapping("/emlpeados/{id}")
+	@PutMapping("/empleados/{id}")
 	public Empleado actualizarEmpleado(@PathVariable(name="id") Long id, @RequestBody Empleado empleado)
 	{
 		Empleado empleado_seleccionado = new Empleado();
@@ -78,7 +78,7 @@ public class EmpleadoController {
 		return empleado_actualizado;
 	}
 	
-	@DeleteMapping("/emlpeados/{id}")
+	@DeleteMapping("/empleados/{id}")
 	public void eliminarEmpleado(@PathVariable(name="id") Long id)
 	{
 		empleadoServiceImpl.eliminarEmpleado(id);
