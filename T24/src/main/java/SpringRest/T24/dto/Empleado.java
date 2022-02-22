@@ -1,7 +1,5 @@
 package SpringRest.T24.dto;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,7 +29,7 @@ public class Empleado {
 	@Column
 	private double salario;
 	@Temporal(TemporalType.DATE)
-	private Date fecha;
+	private String fecha;
 	
 	public Empleado() {
 		
@@ -45,7 +43,7 @@ public class Empleado {
 	 * @param salario
 	 * @param fecha
 	 */
-	public Empleado(Long id, String nombre, String trabajo, double salario, Date fecha) 
+	public Empleado(Long id, String nombre, String trabajo, double salario, String fecha) 
 	{
 		this.id = id;
 		this.nombre = nombre;
@@ -94,12 +92,12 @@ public class Empleado {
 		this.salario = salario;
 	}
 
-	public Date getFecha() 
+	public String getFecha() 
 	{
 		return fecha;
 	}
 
-	public void setFecha(Date fecha) 
+	public void setFecha(String fecha) 
 	{
 		this.fecha = fecha;
 	}
