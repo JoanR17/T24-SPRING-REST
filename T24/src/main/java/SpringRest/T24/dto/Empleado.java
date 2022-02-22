@@ -30,7 +30,7 @@ public class Empleado {
 	private String trabajo;
 	@Column
 	private double salario;
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date fecha;
 	
 	public Empleado() {
