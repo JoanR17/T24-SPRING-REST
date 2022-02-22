@@ -6,7 +6,7 @@ create table empleado(
 	nombre varchar(250),
 	trabajo enum('Junior','Senior','Analista Programador','Analista Organico','Arquitecto'),
 	salario double,
-    fecha date
+	fecha date
 );
 
 insert into empleado (nombre, trabajo, salario, fecha) values('Jose', 'Junior', 1200.50, NOW());
