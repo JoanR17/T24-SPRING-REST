@@ -46,7 +46,7 @@ public class EmpleadoController {
 		return empleadoServiceImpl.guardarEmpleado(empleado);
 	}
 	
-	@GetMapping("/emlpeados/{id}")
+	@GetMapping("/empleados/{id}")
 	public Empleado empleadoXID(@PathVariable(name="id") Long id, @RequestBody Empleado empleado)
 	{
 		Empleado empleado_xid = new Empleado();
