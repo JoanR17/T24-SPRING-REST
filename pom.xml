@@ -15,7 +15,7 @@
 	<name>T24</name>
 	<description>HTTP con un CRUD MVC</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
